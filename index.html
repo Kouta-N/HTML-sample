@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/sanitize.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+    <!-- CSS linkは見た目に影響するのでheadに書く -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <h1 class="section-headline">About</h1>
+      <figure>
+        <img src="./assets/images/about.jpg" alt="About" />
+        <figcaption>
+          <h2>What we can do?</h2>
+        </figcaption>
+      </figure>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+    <!-- bodyの後ろでjsを読み込むことで、headが完全に読み込まれた後にjsが実行される。真っ白画面が表示されることを防げる -->
+  </body>
+</html>
