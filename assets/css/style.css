@@ -39,6 +39,35 @@ button {
   text-align: center;
 }
 
+/* section */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero > strong {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.hero > video {
+  z-index: 1;
+  position: absolute;
+  width: auto;
+  height: 105%;
+}
+
 /* about */
 .about {
   margin: 0;
@@ -102,7 +131,7 @@ button {
   color: #333;
   text-decoration: none;
   position: relative;
-  transition: background-color 0.4s;
+  transition: background-color 0.5s;
 }
 .card-link:hover {
   background-color: #eee;
@@ -222,4 +251,48 @@ button {
 }
 .works > img {
   margin: 0 15px;
+}
+
+/* footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+.footer-map {
+  margin: 0;
+  /* padding: 40px 15px; */
+  display: flex;
+}
+.footer-map > iframe {
+  width: 60%;
+}
+.footer-mapinfo {
+  width: 40%;
+  padding: 15px;
+}
+.footer-maplogo {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.footer-maplogo > img {
+  fill: transparent;
+  margin-right: 10px;
+}
+.footer-mapaddress {
+  font-style: normal;
+  margin-left: 30px;
+}
+.footer-mapaddress > a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-line {
+  margin-top: 10px;
+  border-color: #444;
+}
+.footer-copy {
+  display: block;
+  text-align: center;
+  padding: 10px;
 }
