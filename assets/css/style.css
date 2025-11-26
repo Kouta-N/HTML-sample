@@ -296,3 +296,39 @@ button {
   text-align: center;
   padding: 10px;
 }
+
+/* header */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.header-log {
+  margin: 0;
+}
+.header-navlist {
+  margin: 0;
+  display: flex;
+  justify-content: space;
+  align-items: center;
+}
+.header-navitem > a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+.header-navitem > a:hover {
+  border-bottom: 2px solid #333;
+}
